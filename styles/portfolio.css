@@ -227,6 +227,7 @@ textarea {
   border-radius: 5px;
   background: var(--white-color, #fff);
   border: 0;
+  width: 100%;
 }
 
 /* Responsive styles */
@@ -234,10 +235,30 @@ textarea {
 /* mobile devices */
 
 @media screen and (max-width: 576px) {
-  .skills-container {
+  .skills-container,
+  .resume-container,
+  footer {
     flex-direction: column;
   }
   #what-i-do-description {
     padding: 20px;
+  }
+  footer {
+    padding: 10px;
+  }
+  .footer-column {
+    width: 100%;
+  }
+
+  .contact input[type="text"],
+  .contact input[type="email"],
+  textarea {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  footer {
+    padding: 30px;
   }
 }
