@@ -228,3 +228,16 @@ textarea {
   background: var(--white-color, #fff);
   border: 0;
 }
+
+/* Responsive styles */
+
+/* mobile devices */
+
+@media screen and (max-width: 576px) {
+  .skills-container {
+    flex-direction: column;
+  }
+  #what-i-do-description {
+    padding: 20px;
+  }
+}
